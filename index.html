@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<style>
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Footer{
+    position: relative;
+    height: 12vh;
+    width: 100%;
+}
+.Instagram{
+    position: absolute;
+    bottom: 0;
+    left: 5vh;
+    background-image: url(https://parspng.com/wp-content/uploads/2021/09/instagram-4.png);
+    background-size: cover;
+    width: 12vh;
+    height: 12vh;
+    z-index: -1;
+    transition-duration: 500ms;
+    transform: translateY(0px);
+}
+.Linkedin{
+    position: absolute;
+    bottom: 0;
+    left: 23vh;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/174/174857.png);
+    background-size: cover;
+    width: 12vh;
+    height: 12vh;
+    z-index: -1;
+    transition-duration: 500ms;
+    transform: translateY(0px);
+}
+
+.Twitter{
+    position: absolute;
+    left: 38vh;
+    bottom: 0;
+    background-image: url(https://pnggrid.com/wp-content/uploads/2021/07/Twitter-Logo-Square.png);
+    background-size: 106%;
+    width: 12vh;
+    height: 12vh;
+    z-index: -1;
+    transition-duration: 500ms;
+    transform: translateY(0px);
+}
+.Facebook{
+    position: absolute;
+    left: 54vh;
+    bottom: 0;
+    background-image: url(https://clipart.info/images/ccovers/1509135368facebook-transparent-logo-png-1600x1600.png);
+    background-size: cover;
+    width: 12vh;
+    height: 12vh;
+    z-index: -1;
+    transition-duration: 500ms;
+    transform: translateY(0px);
+}
+.curtain{
+    position: absolute;
+    bottom: 0;
+    font-size: 3vh;
+    background-color: rgb(12, 211, 211);
+    height: 60%;
+    width: 100%;
+    color: black;
+}
+.title:hover{
+    color: blue;
+}
+.title:hover .Instagram {
+    transition-duration: 500ms;
+    transform: translateY(-7.5vh);
+}
+.title:hover .Linkedin {
+    transition-duration: 500ms;
+    transform: translateY(-7.5vh);
+}
+.title:hover .Twitter {
+    transition-duration: 500ms;
+    transform: translateY(-7.5vh);
+}
+.title:hover .Facebook {
+    transition-duration: 500ms;
+    transform: translateY(-7.5vh);
+}
+
+li,ul {
+    display: inline;
+    padding-right: 5vh;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.title{
+    font-size: 3vh;
+    padding-left: 0px;
+}
+
+</style>
+<body>
+    <div>
+    </div>
+    <div class="container">
+        <div class="Footer">
+            <div class="curtain">
+                <div class="grid-container">
+                    <div style="text-align: left;">
+                        <ul>
+                            <li>
+                                <a href="#" class="title">Instagram<div class="Instagram">
+                                    </div></a>
+                            </li>
+                            <li>
+                                <a href="#" class="title">Linkedin<div class="Linkedin">
+                                    </div></a>
+                            </li>
+                            <li>
+                                <a href="#" class="title">Twitter<div class="Twitter">
+                                    </div></a>
+                            </li>
+                            <li>
+                                <a href="#" class="title">Facebook<div class="Facebook">
+                                    </div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="text-align: right;">
+                        <ul>
+                            <li class="City">Pune</li>
+                            <li class="">Mumbai</li>
+                            <li style="padding-right: 0vh;">Nagpur</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: left; padding-left: 5vh;">
+                        connect us on Social Media
+                    </div>
+                    <div style="text-align: right; padding-right: 5vh;">
+                        Office Address
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
